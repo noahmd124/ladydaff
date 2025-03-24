@@ -35,39 +35,51 @@
 
         
 
-        .navbar {
-            display: flex;
-            justify-content: flex-end;
-            padding: 20px 50px;
-            font-size: 24px;
-        }
+     /* Dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
 
-        .navbar a {
-            margin-left: 30px;
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-            float: left;
-            display: block;
-            padding: 14px 16px;
-        }
+/* Dropdown button */
+.dropbtn {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+}
 
-        .dropdown {
-            float: left;
-            overflow: hidden;
-        }
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+}
 
-        .dropbtn {
-            cursor: pointer;
-            font-size: 16px;    
-            border: none;
-            outline: none;
-            color: white;
-            padding: 14px 16px;
-            background-color: inherit;
-        
-            margin: 0;
-        }
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown content when hovering over the dropdown */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 
             
 

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lady Daffodil</title>
 
-<link rel="icon" type="image/x-icon" href="https://primary.jwwb.nl/public/y/c/u/temp-uqjbmpdulfpaeqhapqqc/lady-daff-no-bg-standard-o325re.png">
+    <link rel="icon" type="image/x-icon" href="https://primary.jwwb.nl/public/y/c/u/temp-uqjbmpdulfpaeqhapqqc/lady-daff-no-bg-standard-o325re.png">
     
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
@@ -33,55 +33,66 @@
             z-index: 1000;
         }
 
-        
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px 50px;
+            font-size: 24px;
+        }
 
-     /* Dropdown container */
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
+        .navbar a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            float: left;
+            display: block;
+            padding: 14px 16px;
+        }
 
-/* Dropdown button */
-.dropbtn {
-    cursor: pointer;
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    margin: 0;
-}
+        /* Dropdown container */
+        .dropdown {
+            position: relative;  /* Ensures the dropdown menu positions correctly */
+            display: inline-block;  /* Keeps it inline with other navbar items */
+        }
 
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    z-index: 1;
-}
+        /* Dropdown button (SHOP button) */
+        .dropbtn {
+            font-size: 16px;
+            border: none;
+            color: white;
+            background-color: inherit;
+            padding: 14px 16px;
+            cursor: pointer;
+            font-weight: bold;
+        }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
+        /* Dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;  /* Hide the dropdown content initially */
+            position: absolute;  /* Position it below the dropdown button */
+            background-color: #f1f1f1;
+            min-width: 160px;
+            z-index: 1;
+        }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
+        /* Style for the links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;  /* Display the items as block elements */
+        }
 
-/* Show the dropdown content when hovering over the dropdown */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
+        /* Change background color on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
 
-
-            
+        /* Show the dropdown content when hovering over the dropdown container */
+        .dropdown:hover .dropdown-content {
+            display: block;  /* Make the dropdown content visible when hovering */
+        }
 
         .banner {
             text-align: center;
@@ -95,7 +106,6 @@
             font-weight: normal;
         }
 
-        
     </style>
 </head>
 <body>
@@ -105,61 +115,51 @@
         🚨 New line coming soon! Purple Bloom coming 10th May 2025
     </div>
 
-<br>
-    <br>
+    <br><br>
 
- <div class="navbar">
-    <a href="index.html">HOME</a>
-    <a href="about.html">ABOUT</a>
-    <div class="dropdown">
-        <span class="dropbtn">SHOP</span>
-        <div class="dropdown-content">
-            <a href="#">Men</a>
-            <a href="#">Women</a>
-            <a href="#">Kids</a>
-            <a href="#">Accessories</a>
-            <a href="#">Shop All</a>
+    <div class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <div class="dropdown">
+            <button class="dropbtn">SHOP</button>
+            <div class="dropdown-content">
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Accessories</a>
+                <a href="#">Shop All</a>
+            </div>
         </div>
+        <a href="#">LOG IN</a>
     </div>
-    <a href="#">LOG IN</a>
-</div>
 
     <div class="banner">
         <h1>ABOUT US</h1>
     </div>
 
     <div class="about">
-
         <h1>About Us</h1>
-        <p>Lady Daffodil is a UK based clothing brand. We strive to offer quality clothes, with fasionable and cool designs. Our brilliant team of designers 
-        are always on the look out for new trends and ways to improve our t-shirts.</p>
-<br>
-        <h3>Why Lady Daffodil?</h3>
-        <p>Why Lady Daffodil? We are climate friendly, UK based and all of our clothing is hand printed, packaged and sent in Bristol.</p>
-<br>
-        <p>So why not try out our new affirmation range or have some fun with our comfy cap line.</p>
-        
-<br>
+        <p>Lady Daffodil is a UK based clothing brand. We strive to offer quality clothes, with fashionable and cool designs. Our brilliant team of designers 
+        are always on the lookout for new trends and ways to improve our t-shirts.</p>
         <br>
-
+        <h3>Why Lady Daffodil?</h3>
+        <p>We are climate friendly, UK based, and all of our clothing is hand printed, packaged, and sent from Bristol.</p>
+        <br>
+        <p>So why not try out our new affirmation range or have some fun with our comfy cap line.</p>
+        <br><br>
     </div>
-   <div class="bloom">
 
-       <h1>Coming soon...</h1>
-       <h3>Purple Bloom - Coming 10th May 2025</h3>
-<table>
-    <tr>
-        <td><img src="https://images.unsplash.com/photo-1591181520189-abcb0735c65d?q=80&w=1917&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="flowers1" width="400" height="500"></td>
-        <td> <img src="https://images.unsplash.com/photo-1516676839530-135a545cce02?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="flowers2" width="400" height="500"></td>
-        <td> <img src="https://images.unsplash.com/photo-1557277770-baf0ca74f908?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="flowers3" width="460" height="500"></td>
-    </tr>
-    
-</table>
-   </div>
+    <div class="bloom">
+        <h1>Coming soon...</h1>
+        <h3>Purple Bloom - Coming 10th May 2025</h3>
+        <table>
+            <tr>
+                <td><img src="https://images.unsplash.com/photo-1591181520189-abcb0735c65d?q=80&w=1917&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="flowers1" width="400" height="500"></td>
+                <td><img src="https://images.unsplash.com/photo-1516676839530-135a545cce02?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="flowers2" width="400" height="500"></td>
+                <td><img src="https://images.unsplash.com/photo-1557277770-baf0ca74f908?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="flowers3" width="460" height="500"></td>
+            </tr>
+        </table>
+    </div>
 
-   
-   
-  
-    
 </body>
 </html>

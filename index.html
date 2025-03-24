@@ -33,13 +33,12 @@
             z-index: 1000;
         }
 
-        
-
         .navbar {
             display: flex;
             justify-content: flex-end;
             padding: 20px 50px;
             font-size: 24px;
+            position: relative;
         }
 
         .navbar a {
@@ -47,6 +46,43 @@
             text-decoration: none;
             color: black;
             font-weight: bold;
+            position: relative;
+        }
+
+        .navbar a:hover {
+            color: #555;
+        }
+
+        /* Dropdown Styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 150px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            right: 0;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+            font-size: 20px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
         }
 
         .banner {
@@ -87,14 +123,22 @@
         🚨 New line coming soon! Purple Bloom coming 10th May 2025
     </div>
 
-<br>
-    <br>
+    <br><br>
 
-    
     <div class="navbar">
         <a href="index.html">HOME</a>
         <a href="about.html">ABOUT</a>
-        <a href="#">SHOP</a>
+        <div class="dropdown">
+            <a href="#">SHOP</a>
+            <div class="dropdown-content">
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Accessories</a>
+                <a href="#">Shop All</a>
+            
+            </div>
+        </div>
         <a href="#">LOG IN</a>
     </div>
 
@@ -106,43 +150,23 @@
         </div>
     </div>
 
-   <div class="bloom">
+    <div class="bloom">
+        <h1>Coming soon...</h1>
+        <h3>Purple Bloom - Coming 10th May 2025</h3>
+        <table>
+            <tr>
+                <td><img src="https://images.unsplash.com/photo-1591181520189-abcb0735c65d?q=80&w=1917&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="flowers1" width="400" height="500"></td>
+                <td><img src="https://images.unsplash.com/photo-1516676839530-135a545cce02?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="flowers2" width="400" height="500"></td>
+                <td><img src="https://images.unsplash.com/photo-1557277770-baf0ca74f908?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="flowers3" width="460" height="500"></td>
+            </tr>
+        </table>
+    </div>
 
-       <h1>Coming soon...</h1>
-       <h3>Purple Bloom - Coming 10th May 2025</h3>
-<table>
-    <tr>
-        <td><img src="https://images.unsplash.com/photo-1591181520189-abcb0735c65d?q=80&w=1917&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="flowers1" width="400" height="500"></td>
-        <td> <img src="https://images.unsplash.com/photo-1516676839530-135a545cce02?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="flowers2" width="400" height="500"></td>
-        <td> <img src="https://images.unsplash.com/photo-1557277770-baf0ca74f908?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="flowers3" width="460" height="500"></td>
-    </tr>
-    
-</table>
-   </div>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <!-- Elfsight Contact Form | Untitled Contact Form -->
-<script src="https://static.elfsight.com/platform/platform.js" async></script>
-<div class="elfsight-app-ef0444d8-5d78-4998-ac49-d7514467a024" data-elfsight-app-lazy></div>
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-ef0444d8-5d78-4998-ac49-d7514467a024" data-elfsight-app-lazy></div>
 
-    
 </body>
 </html>

@@ -19,7 +19,7 @@
             font-family: 'Libre Baskerville', serif;
         }
 
-        /* Basic styles for the announcement bar */
+        /* Announcement bar */
         .announcement-bar {
             background-color: #f8d7da;
             color: #721c24;
@@ -33,11 +33,13 @@
             z-index: 1000;
         }
 
+        /* Navbar */
         .navbar {
             display: flex;
             justify-content: flex-end;
             padding: 20px 50px;
             font-size: 24px;
+            margin-top: 50px; /* Prevents overlap with announcement bar */
         }
 
         .navbar a {
@@ -52,48 +54,48 @@
 
         /* Dropdown container */
         .dropdown {
-            position: relative;  /* Ensures the dropdown menu positions correctly */
-            display: inline-block;  /* Keeps it inline with other navbar items */
+            position: relative;
+            display: inline-block;
         }
 
-        /* Dropdown button (SHOP button) */
+        /* Dropdown button */
         .dropbtn {
             font-size: 16px;
             border: none;
-            color: white;
-            background-color: inherit;
+            color: black;
+            background-color: transparent;
             padding: 14px 16px;
             cursor: pointer;
             font-weight: bold;
         }
 
-        /* Dropdown content (hidden by default) */
+        /* Dropdown content */
         .dropdown-content {
-            display: none;  /* Hide the dropdown content initially */
-            position: absolute;  /* Position it below the dropdown button */
+            display: none;
+            position: absolute;
             background-color: #f1f1f1;
             min-width: 160px;
+            left: 0;
             z-index: 1;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        /* Style for the links inside the dropdown */
         .dropdown-content a {
             color: black;
             padding: 12px 16px;
             text-decoration: none;
-            display: block;  /* Display the items as block elements */
+            display: block;
         }
 
-        /* Change background color on hover */
         .dropdown-content a:hover {
             background-color: #ddd;
         }
 
-        /* Show the dropdown content when hovering over the dropdown container */
         .dropdown:hover .dropdown-content {
-            display: block;  /* Make the dropdown content visible when hovering */
+            display: block;
         }
 
+        /* Banner */
         .banner {
             text-align: center;
             padding: 100px;
@@ -106,6 +108,49 @@
             font-weight: normal;
         }
 
+        /* About section */
+        .about {
+            text-align: center;
+            padding: 50px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .about h1, .about h3 {
+            font-weight: normal;
+        }
+
+        .about p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Coming soon section */
+        .bloom {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .bloom h1 {
+            font-size: 36px;
+        }
+
+        .bloom h3 {
+            font-size: 24px;
+            color: #721c24;
+        }
+
+        .bloom table {
+            margin: auto;
+            border-spacing: 20px;
+        }
+
+        .bloom img {
+            width: 400px;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
@@ -115,8 +160,7 @@
         🚨 New line coming soon! Purple Bloom coming 10th May 2025
     </div>
 
-    <br><br>
-
+    <!-- Navbar -->
     <div class="navbar">
         <a href="index.html">HOME</a>
         <a href="about.html">ABOUT</a>
@@ -133,30 +177,32 @@
         <a href="#">LOG IN</a>
     </div>
 
+    <!-- Banner -->
     <div class="banner">
         <h1>ABOUT US</h1>
     </div>
 
+    <!-- About Section -->
     <div class="about">
         <h1>About Us</h1>
-        <p>Lady Daffodil is a UK based clothing brand. We strive to offer quality clothes, with fashionable and cool designs. Our brilliant team of designers 
-        are always on the lookout for new trends and ways to improve our t-shirts.</p>
+        <p>Lady Daffodil is a UK-based clothing brand. We strive to offer quality clothes with fashionable and cool designs. Our brilliant team of designers 
+        is always on the lookout for new trends and ways to improve our t-shirts.</p>
         <br>
         <h3>Why Lady Daffodil?</h3>
-        <p>We are climate friendly, UK based, and all of our clothing is hand printed, packaged, and sent from Bristol.</p>
+        <p>We are climate-friendly, UK-based, and all of our clothing is hand-printed, packaged, and sent from Bristol.</p>
         <br>
-        <p>So why not try out our new affirmation range or have some fun with our comfy cap line.</p>
-        <br><br>
+        <p>So why not try out our new affirmation range or have some fun with our comfy cap line?</p>
     </div>
 
+    <!-- Coming Soon Section -->
     <div class="bloom">
         <h1>Coming soon...</h1>
         <h3>Purple Bloom - Coming 10th May 2025</h3>
         <table>
             <tr>
-                <td><img src="https://images.unsplash.com/photo-1591181520189-abcb0735c65d?q=80&w=1917&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="flowers1" width="400" height="500"></td>
-                <td><img src="https://images.unsplash.com/photo-1516676839530-135a545cce02?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="flowers2" width="400" height="500"></td>
-                <td><img src="https://images.unsplash.com/photo-1557277770-baf0ca74f908?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="flowers3" width="460" height="500"></td>
+                <td><img src="https://images.unsplash.com/photo-1591181520189-abcb0735c65d?q=80&w=1917&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="flowers1"></td>
+                <td><img src="https://images.unsplash.com/photo-1516676839530-135a545cce02?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="flowers2"></td>
+                <td><img src="https://images.unsplash.com/photo-1557277770-baf0ca74f908?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="flowers3"></td>
             </tr>
         </table>
     </div>

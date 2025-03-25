@@ -59,17 +59,16 @@
         }
 
         /* Dropdown button */
-       .dropbtn {
-    font-size: 24px; /* Matches navbar text */
-    font-family: 'Libre Baskerville', serif; /* Matches other links */
-    border: none;
-    color: black;
-    background-color: transparent;
-    padding: 14px 16px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
+        .dropbtn {
+            font-size: 24px; /* Matches navbar text */
+            font-family: 'Libre Baskerville', serif; /* Matches other links */
+            border: none;
+            color: black;
+            background-color: transparent;
+            padding: 14px 16px;
+            cursor: pointer;
+            font-weight: bold;
+        }
 
         /* Dropdown content */
         .dropdown-content {
@@ -102,12 +101,23 @@
             text-align: center;
             padding: 100px;
             height: 400px;
+            position: relative; /* To allow positioning of the text */
         }
 
         .banner h1 {
             font-size: 125px;
             margin: 0;
             font-weight: normal;
+        }
+
+        /* New "Lady Daffodil" on the top-left */
+        .banner .brand-name {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 36px;
+            font-weight: bold;
+            color: #721c24;
         }
 
         /* About section */
@@ -181,6 +191,7 @@
 
     <!-- Banner -->
     <div class="banner">
+        <div class="brand-name">Lady Daffodil</div>
         <h1>ABOUT US</h1>
     </div>
 

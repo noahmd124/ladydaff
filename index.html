@@ -112,35 +112,7 @@
 
         
 
-          }
-        .cookie-notice {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #333;
-            color: #fff;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            max-width: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            font-size: 14px;
-        }
-        .cookie-notice button {
-            background: #ff9800;
-            color: #fff;
-            border: none;
-            padding: 8px 12px;
-            margin-left: 10px;
-            cursor: pointer;
-            border-radius: 5px;
-            font-size: 14px;
-        }
-        .cookie-notice button:hover {
-            background: #e68900;
-        }
+          
 
         
     </style>
@@ -185,24 +157,6 @@
     </div>
 
    
-   <div class="cookie-notice" id="cookieNotice">
-        <span>We use cookies to improve your experience. <a href="#" style="color: #ff9800; text-decoration: none;">Learn more</a></span>
-        <button onclick="acceptCookies()">Got it!</button>
-    </div>
-    
-    <script>
-        function acceptCookies() {
-            document.getElementById("cookieNotice").style.display = "none";
-            localStorage.setItem("cookiesAccepted", "true");
-        }
-
-        window.onload = function() {
-            if (localStorage.getItem("cookiesAccepted") === "true") {
-                document.getElementById("cookieNotice").style.display = "none";
-            }
-        };
-    </script> 
-
 
   
 

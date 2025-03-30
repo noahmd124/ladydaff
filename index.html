@@ -110,10 +110,39 @@
             margin-right: 10px;
         }
 
-        .bloom {
-            height: 300px;
-            text-align: center;
+        
+
+          }
+        .cookie-notice {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #333;
+            color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            max-width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 14px;
         }
+        .cookie-notice button {
+            background: #ff9800;
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            margin-left: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .cookie-notice button:hover {
+            background: #e68900;
+        }
+
+        
     </style>
 </head>
 <body>
@@ -155,23 +184,27 @@
         </div>
     </div>
 
-    <div class="bloom">
-        <h1>Coming soon...</h1>
-        <h3>Purple Bloom - Coming 10th May 2025</h3>
-        <table>
-            <tr>
-                <td><img src="https://images.unsplash.com/photo-1591181520189-abcb0735c65d?q=80&w=1917&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="flowers1" width="400" height="500"></td>
-                <td><img src="https://images.unsplash.com/photo-1516676839530-135a545cce02?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="flowers2" width="400" height="500"></td>
-                <td><img src="https://images.unsplash.com/photo-1557277770-baf0ca74f908?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="flowers3" width="460" height="500"></td>
-            </tr>
-        </table>
+   
+   <div class="cookie-notice" id="cookieNotice">
+        <span>We use cookies to improve your experience. <a href="#" style="color: #ff9800; text-decoration: none;">Learn more</a></span>
+        <button onclick="acceptCookies()">Got it!</button>
     </div>
+    
+    <script>
+        function acceptCookies() {
+            document.getElementById("cookieNotice").style.display = "none";
+            localStorage.setItem("cookiesAccepted", "true");
+        }
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        window.onload = function() {
+            if (localStorage.getItem("cookiesAccepted") === "true") {
+                document.getElementById("cookieNotice").style.display = "none";
+            }
+        };
+    </script> 
 
-    <!-- Elfsight Contact Form | Untitled Contact Form -->
-    <script src="https://static.elfsight.com/platform/platform.js" async></script>
-    <div class="elfsight-app-ef0444d8-5d78-4998-ac49-d7514467a024" data-elfsight-app-lazy></div>
+
+  
 
    
     

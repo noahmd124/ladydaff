@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lady Daffodil</title>
+
+<link rel="icon" type="image/x-icon" href="https://primary.jwwb.nl/public/y/c/u/temp-uqjbmpdulfpaeqhapqqc/lady-daff-no-bg-standard.png">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+        body {
+            overflow-x: hidden;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #f8efe6; /* Light beige */
+            font-family: 'Libre Baskerville', serif;
+        }
+
+        /* Basic styles for the announcement bar */
+        .announcement-bar {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px 50px;
+            font-size: 24px;
+            position: relative;
+        }
+
+        .navbar a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            position: relative;
+        }
+
+        .navbar a:hover {
+            color: #555;
+        }
+
+        /* Dropdown Styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 150px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            right: 0;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+            font-size: 20px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .banner {
+            text-align: left;
+            padding: 100px;
+            height: 400px;
+        }
+
+        .banner h1 {
+            font-size: 75px;
+            margin: 0;
+            font-weight: normal;
+        }
+
+        .handmade {
+            display: flex;
+            align-items: center;
+            font-size: 35px;
+            margin-top: 20px;
+        }
+
+        .handmade img {
+            width: 40px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        
+
+          
+
+        
+    </style>
+</head>
+<body>
+
+   
+
+    <br><br>
+
+    <div class="navbar">
+  
+    <div id="my-categories-114753275"></div>
+<div>
+<script data-cfasync="false" type="text/javascript" src="https://app.ecommerce.ionos.co.uk/script.js?114753275&data_platform=code&data_date=2025-03-31" charset="utf-8"></script>
+<script type="text/javascript"> xCategoriesV2("id=my-categories-114753275"); </script>
+</div>
+        
+    <a href="cart.html"><div class="ec-cart-widget"></div>
+<div>
+<script data-cfasync="false" type="text/javascript" src="https://app.ecommerce.ionos.co.uk/script.js?114753275&data_platform=code&data_date=2025-03-27" charset="utf-8"></script>
+<script type="text/javascript">Ecwid.init();</script>
+</div></a> <!-- Basket icon added -->
+</div>
+
+
+    <div class="banner">
+        <h1>Mens Clothing</h1>
+        <div class="handmade">
+            <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="UK Flag">
+            <span>Hand Printed in the UK</span>
+        </div>
+    </div>
+
+
+<div id="my-categories-114753275"></div>
+<div>
+<script data-cfasync="false" type="text/javascript" src="https://app.ecommerce.ionos.co.uk/script.js?114753275&data_platform=code&data_date=2025-03-31" charset="utf-8"></script>
+<script type="text/javascript"> xCategoriesV2("id=my-categories-114753275"); </script>
+</div>
+   
+
+  
+
+   
+    
+</body>
+</html>

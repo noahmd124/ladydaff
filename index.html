@@ -35,21 +35,22 @@
 
         .navbar {
     display: flex;
-    justify-content: flex-end; /* Align navbar to the right */
-    align-items: center; /* Ensure vertical alignment */
+    justify-content: flex-end;
+    align-items: center;
     padding: 5px;
     font-size: 24px;
     position: relative;
-    gap: 2px; /* Add 2px spacing */
+    gap: 10px; /* Ensures even spacing */
 }
 
-.navbar a {
-    margin-left: 10px; /* Adjust margin for better spacing */
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    position: relative;
+.navbar a:first-child { 
+    margin-right: 10px; /* Adds space between "HOME" and "Menu" */
 }
+
+.ec-cart-widget {
+    margin-right: 0; /* Fixes extra space on the shopping bag */
+}
+        
 .navbar a:hover {
     color: #555;
 }
